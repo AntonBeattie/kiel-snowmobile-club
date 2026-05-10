@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiel Snowmobile Club</title>
+  <meta name="description" content="Kiel Snowmobile Club - Dedicated to Safe and Responsible Snowmobiling in Calumet County, Wisconsin">
+  <meta name="keywords" content="Kiel, Club, Snowmobile, Wisconsin, Calumet County, Trails">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="logo" data-page="home">
+        <i class="fas fa-snowflake"></i>
+        <span>Kiel Snowmobile Club</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <a href="#home" class="nav-link active" data-page="home">Home</a>
+        <a href="#trail-info" class="nav-link" data-page="trail-info">Trail Info</a>
+        <a href="#maps" class="nav-link" data-page="maps">Maps</a>
+        <a href="#membership" class="nav-link" data-page="membership">Membership</a>
+        <a href="#links" class="nav-link" data-page="links">Links</a>
+        <a href="#officers" class="nav-link" data-page="officers">Officers</a>
+        <a href="#safety" class="nav-link" data-page="safety">Safety Classes</a>
+        <a href="#photos" class="nav-link" data-page="photos">Photos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== HOME ===================== -->
+  <section class="page active" id="home">
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Kiel Snowmobile Club Tucker Terra Groomer" class="hero-img">
+      <div class="hero-content">
+        <h1 class="hero-title">Kiel Snowmobile Club</h1>
+        <p class="hero-subtitle">Dedicated to Safe and Responsible Snowmobiling</p>
+        <a href="#membership" class="btn btn-primary hero-cta" data-page="membership">Join the Club</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Membership Reminder -->
+      <div class="alert-banner">
+        <i class="fas fa-exclamation-triangle"></i>
+        <span>Be sure to renew your <a href="#membership" data-page="membership">Membership</a> before ordering your trail pass!</span>
+      </div>
+
+      <!-- Trail Status -->
+      <div class="section-card trail-status-card">
+        <h2 class="section-title">
+          <i class="fas fa-route"></i>
+          Check for Open/Closed Trails in Surrounding Counties
+        </h2>
+        <div class="trail-buttons">
+          <a href="https://wi-calumetcounty2.civicplus.com/713/Trails-Report?fbclid=IwAR12PoR7spYq5_h58KvrJ9wWVxxioEHqzyr7WUCieQXPWTA39jtQOmxKFp8" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Calumet County Trails
+          </a>
+          <a href="https://manitowoccountywi.gov/departments/parks/snowmobile-trail-conditions/" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Manitowoc County Trails
+          </a>
+          <a href="http://www.fdlsnowmobileassn.com/index.php?refreshed=1" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Fond Du Lac County Trails
+          </a>
+          <a href="http://www.nkmsnow.com/" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Sheboygan County Trails
+          </a>
+          <a href="images/county-trail-map.pdf" target="_blank" rel="noopener" class="btn btn-trail btn-accent">
+            <i class="fas fa-map"></i> Calumet County Trail Map
+          </a>
+          <a href="https://www.google.com/maps/d/viewer?mid=1XUNNWyFx9esyk8-r1_fRiOMnyWg&ll=44.08260649583428%2C-88.21789741597593&z=10" target="_blank" rel="noopener" class="btn btn-trail btn-accent">
+            <i class="fas fa-globe"></i> Calumet County Google Map
+          </a>
+        </div>
+        <p class="thank-you">Thanks to our Landowners and grooming crews for making the great trails possible.</p>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="quick-actions">
+        <a href="https://www.awsc.org/" target="_blank" rel="noopener" class="action-card">
+          <div class="action-icon"><i class="fas fa-users"></i></div>
+          <h3>AWSC</h3>
+          <p>Association of Wisconsin Snowmobile Clubs</p>
+        </a>
+        <a href="https://www.awsc.org/Trail-Pass-Registration/Order-Passes-Online" target="_blank" rel="noopener" class="action-card">
+          <div class="action-icon"><i class="fas fa-ticket-alt"></i></div>
+          <h3>Trail Pass</h3>
+          <p>Order your Wisconsin Trail Pass online</p>
+        </a>
+        <a href="#membership" class="action-card" data-page="membership">
+          <div class="action-icon"><i class="fas fa-id-card"></i></div>
+          <h3>Membership</h3>
+          <p>Join the club and save on trail passes</p>
+        </a>
+      </div>
+
+      <!-- Trail Pass Info -->
+      <div class="section-card info-card">
+        <div class="info-card-content">
+          <h2 class="section-title accent-title">
+            <i class="fas fa-snowflake"></i>
+            Make Winter Fun!
+          </h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <h3>Come and Be a Part of a Club</h3>
+              <p>See details on our <a href="#membership" data-page="membership">Membership page</a>.</p>
+              <p>If you are not a club member your trail pass will cost you <strong>$30 a year</strong> with the WI DNR or <strong>$50 a year</strong> for out of state snowmobiles.</p>
+              <p class="highlight-text">Join a club and save.</p>
+            </div>
+            <div class="info-item">
+              <h3>Wisconsin Trail Pass</h3>
+              <p class="notice">You must obtain a trail pass to be able to ride on WI trails or may be fined by law enforcement. Please support your local clubs to obtain a discounted pass.</p>
+              <p>Join a Club and become a member with your local club and a member of The Association of Wisconsin Snowmobile Clubs - <a href="https://www.awsc.org/" target="_blank" rel="noopener">AWSC</a></p>
+            </div>
+            <div class="info-item full-width">
+              <h3>How to Get Your Trail Pass</h3>
+              <ul class="step-list">
+                <li><i class="fas fa-check-circle"></i> Once you receive your membership number, you can order your <strong>$10 WI trail pass</strong> online through the <a href="https://www.awsc.org/" target="_blank" rel="noopener">AWSC website</a> with a credit/debit card (MasterCard, Visa or Discover).</li>
+                <li><i class="fas fa-check-circle"></i> Call the AWSC Office during business hours (8 AM to 4 PM) to order your WI Trail Pass with a credit/debit card.</li>
+                <li><i class="fas fa-check-circle"></i> Mail through the US Post Office along your check or credit card information to the AWSC office.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TRAIL INFORMATION ===================== -->
+  <section class="page" id="trail-info">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Trail Information" class="page-hero-img">
+      <h2 class="page-hero-title">Trail Information</h2>
+    </div>
+    <div class="container">
+      <div class="section-card">
+        <div class="trail-alert">
+          <i class="fas fa-exclamation-circle"></i>
+          <strong>ALWAYS CHECK BEFORE RIDING!</strong>
+        </div>
+
+        <div class="trail-status-block">
+          <div class="status-item status-closed">
+            <i class="fas fa-times-circle"></i>
+            <div>
+              <h3>Kiel Area Section 6 of Calumet County</h3>
+              <span class="status-badge closed">CLOSED</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="trail-info-grid">
+          <div class="info-box">
+            <h3><i class="fas fa-info-circle"></i> Club Details</h3>
+            <p>Our club maintains approximately <strong>38 miles of trails</strong> in Calumet County.</p>
+          </div>
+          <div class="info-box">
+            <h3><i class="fas fa-phone"></i> County Contacts</h3>
+            <p>Fond Du Lac County: <a href="tel:9209296840">(920) 929-6840</a></p>
+          </div>
+        </div>
+
+        <h3 class="subsection-title">Check County Trail Conditions</h3>
+        <div class="trail-buttons compact">
+          <a href="https://www.calumetcounty.org/719/Snowmobile-Trails" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Calumet County
+          </a>
+          <a href="https://manitowoccountywi.gov/departments/parks/snowmobile-trail-conditions/" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Manitowoc County
+          </a>
+          <a href="http://www.fdlsnowmobileassn.com/" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Fond Du Lac County
+          </a>
+          <a href="http://www.nkmsnow.com/" target="_blank" rel="noopener" class="btn btn-trail">
+            <i class="fas fa-map-marker-alt"></i> Sheboygan County
+          </a>
+        </div>
+
+        <div class="pdf-download">
+          <a href="images/trail-map.pdf" target="_blank" rel="noopener" class="btn btn-download">
+            <i class="fas fa-file-pdf"></i> Download Wisconsin State Trails Map (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MAPS ===================== -->
+  <section class="page" id="maps">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Maps" class="page-hero-img">
+      <h2 class="page-hero-title">Maps</h2>
+    </div>
+    <div class="container">
+      <div class="section-card">
+        <h2 class="section-title"><i class="fas fa-map-marked-alt"></i> Calumet County Snowmobile Trails</h2>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1XUNNWyFx9esyk8-r1_fRiOMnyWg"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            title="Calumet County Snowmobile Trail Map">
+          </iframe>
+        </div>
+
+        <div class="map-actions">
+          <a href="https://gts.groomertrackingsystems.com/map" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fas fa-satellite"></i> Groomer Tracking Map
+          </a>
+          <a href="images/county-trail-map.pdf" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fas fa-file-pdf"></i> Download Trail Map (PDF)
+          </a>
+        </div>
+
+        <p class="contact-note">Contact <a href="mailto:wmillers@yahoo.com">wmillers@yahoo.com</a> for corrections.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MEMBERSHIP ===================== -->
+  <section class="page" id="membership">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Membership" class="page-hero-img">
+      <h2 class="page-hero-title">Membership</h2>
+    </div>
+    <div class="container">
+      <div class="membership-grid">
+        <div class="section-card membership-main">
+          <h2 class="section-title"><i class="fas fa-id-card-alt"></i> Join the Club</h2>
+
+          <div class="pricing-card">
+            <div class="price">$25</div>
+            <div class="price-label">per year</div>
+            <p>Single or Family Membership</p>
+            <p class="price-note">Beginning July 1, 2026</p>
+            <div class="price-warning">
+              <i class="fas fa-clock"></i>
+              Must be paid by December 1 &mdash; Dues raise to <strong>$35</strong> after December 1
+            </div>
+          </div>
+
+          <div class="payment-options">
+            <h3>Payment Options</h3>
+            <div class="payment-methods">
+              <div class="payment-method">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>Cash</span>
+              </div>
+              <div class="payment-method">
+                <i class="fas fa-money-check"></i>
+                <span>Check</span>
+              </div>
+              <div class="payment-method">
+                <i class="fas fa-credit-card"></i>
+                <span>Online</span>
+                <small>($1 convenience fee)</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="membership-actions">
+            <a href="https://kielsnowmobile.wufoo.com/forms/z1945ydx0xh5txs/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <i class="fas fa-user-plus"></i> New Membership Sign Up
+            </a>
+            <a href="http://paypal.me/clubduesksc/26" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+              <i class="fab fa-paypal"></i> Pay Club Dues (New/Renew)
+            </a>
+          </div>
+        </div>
+
+        <div class="section-card membership-sidebar">
+          <h3><i class="fas fa-calendar-alt"></i> Meetings</h3>
+          <div class="meeting-info">
+            <p class="meeting-schedule">Third Sunday of the Month</p>
+            <p class="meeting-location">Altona Supper Club</p>
+            <p class="meeting-time"><i class="fas fa-clock"></i> 5:00 PM</p>
+          </div>
+
+          <h3 style="margin-top: 2rem;"><i class="fas fa-star"></i> Member Benefits</h3>
+          <ul class="benefits-list">
+            <li><i class="fas fa-check"></i> Discounted WI Trail Pass ($10 vs $30)</li>
+            <li><i class="fas fa-check"></i> Support local trail maintenance</li>
+            <li><i class="fas fa-check"></i> AWSC membership included</li>
+            <li><i class="fas fa-check"></i> Community events and activities</li>
+            <li><i class="fas fa-check"></i> Safety classes and resources</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LINKS ===================== -->
+  <section class="page" id="links">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Links" class="page-hero-img">
+      <h2 class="page-hero-title">Links</h2>
+    </div>
+    <div class="container">
+      <div class="links-grid">
+        <div class="section-card">
+          <h2 class="section-title"><i class="fas fa-external-link-alt"></i> Resources</h2>
+          <div class="link-list">
+            <a href="https://www.awsc.org/Trail-Pass-Registration/Order-Passes-Online" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-ticket-alt"></i></div>
+              <div class="link-info">
+                <h3>Order Trail Pass</h3>
+                <p>Purchase your Wisconsin Trail Pass through AWSC</p>
+              </div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://www.awsc.org/About-Us/Member-Lookup" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-search"></i></div>
+              <div class="link-info">
+                <h3>Member Number Look-up</h3>
+                <p>Find your AWSC membership number</p>
+              </div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="http://wi.groomertrackingsystems.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-satellite-dish"></i></div>
+              <div class="link-info">
+                <h3>SNARS</h3>
+                <p>Groomer Tracking System</p>
+              </div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://www.travelwisconsin.com/snowreport/snowmobile" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowplow"></i></div>
+              <div class="link-info">
+                <h3>Travel Wisconsin Trail Report</h3>
+                <p>Statewide snowmobile trail conditions</p>
+              </div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://kielsnowmobile.wufoo.com/forms/k8253t61209de1/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-tools"></i></div>
+              <div class="link-info">
+                <h3>Trail Maintenance</h3>
+                <p>Report trail issues or maintenance needs</p>
+              </div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <h2 class="section-title"><i class="fas fa-handshake"></i> Our Neighbors</h2>
+          <div class="link-list">
+            <a href="http://www.louiscornerssnobirds.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowflake"></i></div>
+              <div class="link-info"><h3>Louis Corners Sno-birds</h3></div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="http://www.holylandsnowflyers.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowflake"></i></div>
+              <div class="link-info"><h3>Holyland Snowflyers</h3></div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="http://deerrunsnoriders.tripod.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowflake"></i></div>
+              <div class="link-info"><h3>Deer Run Sno Riders</h3></div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="http://calumetsnotrails.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowflake"></i></div>
+              <div class="link-info"><h3>Calumet Sno Trails</h3></div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="http://www.foxvalleysnowriders.com/" target="_blank" rel="noopener" class="link-item">
+              <div class="link-icon"><i class="fas fa-snowflake"></i></div>
+              <div class="link-info"><h3>Fox Valley Snow Riders</h3></div>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OFFICERS/CONTACTS ===================== -->
+  <section class="page" id="officers">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Officers & Contacts" class="page-hero-img">
+      <h2 class="page-hero-title">Officers &amp; Contacts</h2>
+    </div>
+    <div class="container">
+      <div class="officers-grid">
+        <div class="officer-card president">
+          <div class="officer-badge">President</div>
+          <h3>Travis Halfmann</h3>
+          <div class="officer-contact">
+            <a href="mailto:trhalfmann25@gmail.com"><i class="fas fa-envelope"></i> trhalfmann25@gmail.com</a>
+            <a href="tel:9203740760"><i class="fas fa-phone"></i> (920) 374-0760</a>
+          </div>
+        </div>
+        <div class="officer-card">
+          <div class="officer-badge">Vice President</div>
+          <h3>Corey Bratz</h3>
+          <div class="officer-contact">
+            <a href="tel:9203750820"><i class="fas fa-phone"></i> (920) 375-0820</a>
+          </div>
+        </div>
+        <div class="officer-card">
+          <div class="officer-badge">Secretary</div>
+          <h3>Wayne Miller</h3>
+          <div class="officer-contact">
+            <a href="mailto:wmillers@yahoo.com"><i class="fas fa-envelope"></i> wmillers@yahoo.com</a>
+            <a href="tel:9202860441"><i class="fas fa-phone"></i> (920) 286-0441</a>
+          </div>
+        </div>
+        <div class="officer-card">
+          <div class="officer-badge">Treasurer</div>
+          <h3>Pat Halbach</h3>
+          <div class="officer-contact">
+            <a href="mailto:patnchar94@gmail.com"><i class="fas fa-envelope"></i> patnchar94@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-card contact-card">
+        <h2 class="section-title"><i class="fas fa-envelope"></i> Contact the Club</h2>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <i class="fas fa-at"></i>
+            <div>
+              <h3>Email</h3>
+              <a href="mailto:kielsnowmobileclub@yahoo.com">kielsnowmobileclub@yahoo.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-mail-bulk"></i>
+            <div>
+              <h3>Mailing Address</h3>
+              <p>Kiel Snowmobile Club<br>703 Miller Ct<br>Kiel, WI 53042</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-embed">
+          <h3>Send Us a Message</h3>
+          <iframe
+            src="https://spreadsheets.google.com/embeddedform?formkey=dGM4d2xjQjVsQlpiUzhqUVhiRHB1bXc6MA"
+            width="100%" height="500" style="border:0;" loading="lazy"
+            title="Contact Form">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SAFETY CLASSES ===================== -->
+  <section class="page" id="safety">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Safety Classes" class="page-hero-img">
+      <h2 class="page-hero-title">Snowmobile Safety Classes</h2>
+    </div>
+    <div class="container">
+      <div class="safety-grid">
+        <div class="section-card safety-main">
+          <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Upcoming Class</h2>
+
+          <div class="class-details">
+            <div class="class-detail">
+              <i class="fas fa-calendar"></i>
+              <div>
+                <h3>Schedule</h3>
+                <p>November 11, 18, and 25</p>
+                <p>6:00 PM to 9:00 PM</p>
+              </div>
+            </div>
+            <div class="class-detail">
+              <i class="fas fa-map-pin"></i>
+              <div>
+                <h3>Location</h3>
+                <p>Kiel Community Center</p>
+              </div>
+            </div>
+            <div class="class-detail">
+              <i class="fas fa-dollar-sign"></i>
+              <div>
+                <h3>Fee</h3>
+                <p>$10.00</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="class-actions">
+            <a href="https://gowild.wi.gov/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <i class="fas fa-external-link-alt"></i> Register at Go Wild DNR Website
+            </a>
+            <a href="https://kielsnowmobile.wufoo.com/forms/m1ac3mto1utnzal/" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">
+              <i class="fas fa-envelope"></i> Contact Kiel Club
+            </a>
+          </div>
+        </div>
+
+        <div class="section-card safety-sidebar">
+          <h3><i class="fas fa-clipboard-list"></i> Requirements</h3>
+          <p>All Wisconsin recreational safety students are required to obtain a <strong>Wisconsin DNR Customer ID Number</strong> before the completion of any recreational safety class.</p>
+          <p>Students must provide their customer ID number along with personal information to the instructor.</p>
+
+          <div class="dnr-contact">
+            <h4>Get Your DNR Customer ID:</h4>
+            <ul>
+              <li>Call DNR customer service: <a href="tel:18889367463">1-888-936-7463</a> (7 AM to 10 PM)</li>
+              <li>Visit a <a href="https://gowild.wi.gov/" target="_blank" rel="noopener">DNR service center</a></li>
+            </ul>
+          </div>
+
+          <h3 style="margin-top: 2rem;"><i class="fas fa-laptop"></i> Internet Courses</h3>
+          <p>Students <strong>MUST be 16 years of age or older</strong> to become certified by online courses.</p>
+          <div class="online-courses">
+            <a href="http://www.snowmobile-ed.com/Wisconsin/" target="_blank" rel="noopener" class="btn btn-outline">snowmobile-ed.com</a>
+            <a href="http://www.snowmobilecourse.com/usa/wisconsin" target="_blank" rel="noopener" class="btn btn-outline">snowmobilecourse.com</a>
+          </div>
+
+          <h3 style="margin-top: 2rem;"><i class="fas fa-chalkboard-teacher"></i> Safety Instructors</h3>
+          <ul class="instructor-list">
+            <li><strong>Kiel Snowmobile Club:</strong> Wayne Miller, Travis Halfmann, and Sherry Halbach</li>
+            <li><strong>Louis Corners Snowmobile Club:</strong> Brian Woelfel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PHOTOS ===================== -->
+  <section class="page" id="photos">
+    <div class="page-hero page-hero-small">
+      <div class="page-hero-overlay"></div>
+      <img src="images/hero-groomer.jpg" alt="Photos" class="page-hero-img">
+      <h2 class="page-hero-title">Photos</h2>
+    </div>
+    <div class="container">
+      <div class="photo-gallery">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/chili-meeting1.jpg" alt="April Meeting - Chili Night" loading="lazy">
+          <div class="gallery-caption">
+            <h3>April Meeting</h3>
+            <p>Thanks to Jolene, Sherry and Tammy for bringing Chili and Tom for the homemade cookies.</p>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/chili-meeting2.jpg" alt="April Meeting Gathering" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Club Gathering</h3>
+            <p>Members enjoying the April meeting.</p>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/safety-class-2024.jpg" alt="Safety Class of 2024" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Safety Class of 2024</h3>
+            <p>Congratulations to the Safety Class of 2024!</p>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/groomer.jpg" alt="Club Groomer" loading="lazy">
+          <div class="gallery-caption">
+            <h3>First Grooming 2016-2017</h3>
+            <p>1st Grooming of the 2016-2017 season - Dec 17 &amp; 18</p>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/club-members.jpg" alt="Club Members" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Club Members</h3>
+            <p>The Brian Brill Family, the Pat Halbach Family and the Tom Halbach Family</p>
+          </div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="images/trail-marking.jpg" alt="2014 Trail Marking" loading="lazy">
+          <div class="gallery-caption">
+            <h3>Trail Marking 2014</h3>
+            <p>Volunteers marking trails for the season.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <button class="lightbox-prev" onclick="changeLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next" onclick="changeLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3><i class="fas fa-snowflake"></i> Kiel Snowmobile Club</h3>
+          <p>Dedicated to Safe and Responsible Snowmobiling</p>
+          <p class="footer-address">703 Miller Ct, Kiel, WI 53042</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <a href="#trail-info" data-page="trail-info">Trail Information</a>
+          <a href="#maps" data-page="maps">Maps</a>
+          <a href="#membership" data-page="membership">Membership</a>
+          <a href="#safety" data-page="safety">Safety Classes</a>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <a href="mailto:kielsnowmobileclub@yahoo.com"><i class="fas fa-envelope"></i> kielsnowmobileclub@yahoo.com</a>
+          <a href="tel:9203740760"><i class="fas fa-phone"></i> (920) 374-0760</a>
+        </div>
+        <div class="footer-col">
+          <h3>Organizations</h3>
+          <a href="https://www.awsc.org/" target="_blank" rel="noopener">AWSC</a>
+          <a href="https://www.travelwisconsin.com/snowreport/snowmobile" target="_blank" rel="noopener">Travel Wisconsin</a>
+          <a href="https://gowild.wi.gov/" target="_blank" rel="noopener">WI DNR Go Wild</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kiel Snowmobile Club. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
